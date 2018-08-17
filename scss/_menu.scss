@@ -33,7 +33,58 @@
       &:nth-child(3){
         transform: rotate(-45deg) translate(6px, -6px);
       }
+    }
+  }
+}
 
+//menu overlay
+.menu{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+
+  &.show{
+    visibility: visible;
+  }
+  // these are styles for both
+  &-branding,   // with the nesting this is targeting .menu-branding
+  &-nav{        // this means .menu-nav
+    display: flex;                // make into 2 colums
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width:50%;      // splits the area even down center
+    height: 100vh; // 100 slices of the viewport
+     overflow: hidden;
+  }
+
+  //nav side (right side with menu)
+  &-nav{
+    margin: 0;
+    padding: 0;
+    background-color: darken($primary-color, 5);
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+
+    &.show{
+      //make it slide in from top when show is applied
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  //branding side (left side with pic)
+  &-branding{
+    background-color: $primary-color;
+    transform: translate3d(0, 100%, 0);
+    @include easeOut;
+
+    &.show{
+      //make it slide in from top when show is applied
+      transform: translate3d(0, 0, 0);
     }
   }
 }
