@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -83,8 +83,58 @@
     @include easeOut;
 
     &.show{
-      //make it slide in from top when show is applied
+      //make it slide in from bottom when show is applied
       transform: translate3d(0, 0, 0);
     }
+
+    .portrait{
+      width: 250px;
+      height: 250px;
+      background: url('../img/portrait.gif');
+      border-radius: 50%;
+      border: solid 3px $secondary-color;
+    }
+  }
+  .nav-item{
+    //starts off the screen
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+
+    &.show{
+      //slide in from right
+      transform: translate3d(0, 0, 0);
+    }
+
+    //the link is what we want to color
+    &.current > a{
+      color: $secondary-color;
+    }
+  }
+
+  // just to be clear this is .menu.navlink
+  .nav-link{
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: set-text-color($primary-color);
+    text-decoration: none;
+    @include easeOut;
+
+    &:hover{
+      color: $secondary-color;
+    }
+  }
+}
+
+// delay each nav items slide in when hamburger is clicked
+// 1 - 4 because we have 4 menu items
+// this loops through them assigns them to $x
+// and adds a delay of 1*.1s to first, 2*.1s to second... so on
+@for $x from 1 through 4{
+  .nav-item:nth-child(#{$x}){
+    transition-delay: $x * 0.1s;
   }
 }
