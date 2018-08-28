@@ -181,6 +181,18 @@ main {
 .job-3 {
   grid-area: job3; }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: .7rem; }
+  .projects img {
+    width: 100%;
+    border: 3px solid #fff; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #eece1a;
+      transition: all 0.5s ease-out; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
