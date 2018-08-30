@@ -1,51 +1,11 @@
-@import '_config.scss';
-@import '_menu';
-
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  @include background;
-  background: $primary-color;
-  color: set-text-color($primary-color);
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-}
-
-// Headings
-h1,h2,h3 {
-  margin: 0;
-  font-weight: 400;
-
-  &.lg-heading {
-    font-size: 6rem;
-  }
-
-  &.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
-  }
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
-
-.text-secondary {
-  color: $secondary-color;
-}
+@import 'abstracts/_config.scss';
+@import 'base/_reset.scss';
+@import 'layout/_menu.scss';
+@import 'layout/_footer.scss';
+@import 'components/_buttons.scss';
+@import 'pages/_about.scss';
+@import 'pages/_contact.scss';
+@import 'pages/_work.scss';
 
 main {
   padding: 4rem;
@@ -71,122 +31,6 @@ main {
       margin-top: 20vh;        //height is 100 slices, use 20 as margin
     }
   }
-}
-
-.about-info{
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.bio-image{
-  grid-area: bioimage;
-  margin: auto;
-  border-radius: 50%;
-  border: 3px solid $secondary-color;
-}
-
-.job{
-  background: lighten($primary-color, 5);
-  padding: 0.5rem;
-  border-bottom: 5px solid $secondary-color;
-}
-
-.bio{
-  grid-area: bio;
-  font-size: 1.5rem;
-}
-  // need to fix, job 1 does not flex under picture
-.job-1{
-  grid-area: job1;
-}
-
-.job-2{
-  grid-area: job2;
-}
-
-.job-3{
-  grid-area: job3;
-}
-
-//work/projects
-.projects{
-  display: grid;
-  //we want it to be 3 fractionals across
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem;
-
-  img{
-    width: 100%;
-    border: 3px solid #fff;
-
-    &:hover{
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
-  }
-}
-
-//contact page ----can refactor to use grid to remain consistant
-.boxes{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem;
-
-  div{
-    font-size: 2rem;
-    border: 3px solid #fff;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    @include easeOut;
-
-      &:hover{
-        padding: 0.5rem 1.5rem;
-        background: $secondary-color;
-        color: set-text-color($secondary-color);
-        span{
-          color: set-text-color($secondary-color);
-        }
-      }
-  }
-}
-
-//button styles
-.btn{
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
-  &:hover{
-    color: set-text-color($secondary-color);
-    background: $secondary-color;
-  }
-}
-
-.btn-dark{
-  @extend .btn;
-  background: darken($primary-color, 50);
-  color: #fff;
-}
-
-.btn-light{
-  @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #333;
-}
-
-#main-footer{
-  text-align: center;
-  padding: 1rem;
-  background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
-  height: 60px;
 }
 
 @import '_mobile';

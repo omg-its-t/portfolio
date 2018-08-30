@@ -1,3 +1,49 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #555151;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(85, 81, 81, 0.9);
+      z-index: -1; }
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+    font-size: 6rem; }
+  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(90, 86, 86, 0.5); }
+
+a {
+  color: #ecf4f3;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: #76dbd1; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -40,14 +86,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background-color: #373737;
+    background-color: #484545;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background-color: #444;
+    background-color: #555151;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -57,14 +103,14 @@
       height: 250px;
       background: url("../img/portrait.gif");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #76dbd1; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #76dbd1; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +122,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #76dbd1; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -90,66 +136,29 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-* {
-  box-sizing: border-box; }
-
-body {
-  background: #444;
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #3b3838;
   color: #fff;
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
-  body#bg-img {
-    background: url(../img/background.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
-    body#bg-img:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(68, 68, 68, 0.9);
-      z-index: -1; }
+  height: 60px; }
 
-h1, h2, h3 {
-  margin: 0;
-  font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 6rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    color: #000;
+    background: #76dbd1; }
 
-a {
-  color: #fff;
-  text-decoration: none; }
+.btn-dark {
+  background: black;
+  color: #ecf4f3; }
 
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%; }
-
-.text-secondary {
-  color: #eece1a; }
-
-main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #eece1a;
-        transition: all 0.5s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
+.btn-light {
+  background: #d4d1d1;
+  color: #333; }
 
 .about-info {
   display: grid;
@@ -161,12 +170,12 @@ main {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: 3px solid #eece1a; }
+  border: 3px solid #76dbd1; }
 
 .job {
-  background: #515151;
+  background: #625d5d;
   padding: 0.5rem;
-  border-bottom: 5px solid #eece1a; }
+  border-bottom: 5px solid #76dbd1; }
 
 .bio {
   grid-area: bio;
@@ -181,6 +190,25 @@ main {
 .job-3 {
   grid-area: job3; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px solid #ecf4f3;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #76dbd1;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -190,51 +218,23 @@ main {
     border: 3px solid #fff; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #76dbd1;
       transition: all 0.5s ease-out; }
 
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
-  .boxes div {
-    font-size: 2rem;
-    border: 3px solid #fff;
-    padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #eece1a;
-      color: #000; }
-      .boxes div:hover span {
-        color: #000; }
-
-.btn, .btn-dark, .btn-light {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
-    color: #000;
-    background: #eece1a; }
-
-.btn-dark {
-  background: black;
-  color: #fff; }
-
-.btn-light {
-  background: #c4c4c4;
-  color: #333; }
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #2b2b2b;
-  color: #fff;
-  height: 60px; }
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #76dbd1;
+        transition: all 0.5s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
 
 @media screen and (min-width: 1171px) {
   .projects {
