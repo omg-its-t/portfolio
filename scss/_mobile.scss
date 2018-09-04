@@ -66,6 +66,10 @@
   .projects{
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #project{
+    padding: 1rem;
+  }
 }
 
 //phones

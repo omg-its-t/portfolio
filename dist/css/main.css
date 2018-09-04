@@ -211,8 +211,6 @@ header {
 
 .project-about {
   color: #fff;
-  width: 85%;
-  margin: auto;
   border-bottom: 5px solid #76dbd1; }
 
 .projects {
@@ -278,7 +276,9 @@ main {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "bioimg" "job3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #project {
+    padding: 1rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
