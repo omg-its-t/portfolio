@@ -209,6 +209,12 @@ header {
       .boxes div:hover span {
         color: #000; }
 
+.project-about {
+  color: #fff;
+  width: 85%;
+  margin: auto;
+  border-bottom: 5px solid #76dbd1; }
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
