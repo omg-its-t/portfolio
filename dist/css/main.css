@@ -101,7 +101,7 @@ header {
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.gif");
+      background: url("../img/theo-portrait.gif");
       border-radius: 50%;
       border: solid 3px #76dbd1; }
   .menu .nav-item {
@@ -269,7 +269,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait-sm.jpg");
+      background: url("../img/theo-portrait-small.gif");
       width: 150px;
       height: 150px; }
   .about-info {
