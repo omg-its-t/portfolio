@@ -2,3 +2,10 @@
     color: set-text-color($primary-color);
     border-bottom: 5px solid $secondary-color;
 }
+
+img.center{
+  padding: 1.2em 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

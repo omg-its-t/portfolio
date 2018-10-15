@@ -213,6 +213,12 @@ header {
   color: #fff;
   border-bottom: 5px solid #76dbd1; }
 
+img.center {
+  padding: 1.2em 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
