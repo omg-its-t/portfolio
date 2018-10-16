@@ -3,9 +3,14 @@
     border-bottom: 5px solid $secondary-color;
 }
 
-img.center{
-  padding: 1.2em 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.project-about{
+  .center{
+    padding: 1.2em 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a{
+    color: $secondary-color;
+  }
 }

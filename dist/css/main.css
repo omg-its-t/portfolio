@@ -213,11 +213,14 @@ header {
   color: #fff;
   border-bottom: 5px solid #76dbd1; }
 
-img.center {
+.project-about .center {
   padding: 1.2em 0;
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+.project-about a {
+  color: #76dbd1; }
 
 .projects {
   display: grid;
