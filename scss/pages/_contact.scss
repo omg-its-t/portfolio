@@ -22,4 +22,28 @@
         }
       }
   }
+
+  input[type=text],
+  select,
+  textarea{
+    width: 100%;
+    padding: .5em;
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: .5em;
+    margin-bottom: 1.2em;
+      }
+
+    textarea{
+      height: 10em;
+    }
+}
+
+.contact-form{
+  text-align: left;
+
+  .btn-dark{
+    border-radius: 4px;
+  }
 }

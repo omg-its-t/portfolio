@@ -208,6 +208,23 @@ header {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+  .boxes input[type=text],
+  .boxes select,
+  .boxes textarea {
+    width: 100%;
+    padding: .5em;
+    border: 1px solid #76dbd1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: .5em;
+    margin-bottom: 1.2em; }
+  .boxes textarea {
+    height: 10em; }
+
+.contact-form {
+  text-align: left; }
+  .contact-form .btn-dark {
+    border-radius: 4px; }
 
 .project-about {
   color: #fff;
