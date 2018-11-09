@@ -50,13 +50,13 @@ header {
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-in-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -89,13 +89,13 @@ header {
     background-color: #484545;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background-color: #555151;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -106,7 +106,7 @@ header {
       border: solid 3px #76dbd1; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -120,7 +120,7 @@ header {
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-in-out; }
     .menu .nav-link:hover {
       color: #76dbd1; }
 
@@ -147,7 +147,9 @@ header {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  transition: all 0.5s ease-in-out;
+  /* maybe, do more testing */ }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     color: #000;
     background: #76dbd1; }
@@ -233,10 +235,12 @@ header {
   text-align: left; }
   .contact-form .btn-dark {
     border-radius: 4px;
-    cursor: pointer; }
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out; }
 
 h2 a {
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
   color: #76dbd1; }
   h2 a:hover {
     color: #fff; }
@@ -264,7 +268,7 @@ h2 a {
     .projects img:hover {
       opacity: 0.5;
       border-color: #76dbd1;
-      transition: all 0.5s ease-out; }
+      transition: all 0.5s ease-in-out; }
 
 main {
   padding: 4rem;
@@ -275,7 +279,7 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #76dbd1;
-        transition: all 0.5s ease-out; }
+        transition: all 0.5s ease-in-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
