@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
-
+/*
   div{
     font-size: 2rem;
     border: 3px solid #ecf4f3;
@@ -22,7 +22,7 @@
         }
       }
   }
-
+*/
   input[type=text],
   select,
   textarea{
@@ -33,7 +33,11 @@
     box-sizing: border-box;
     margin-top: .5em;
     margin-bottom: 1.2em;
-      }
+    }
+
+    label{
+      font-size: 1.2em;
+    }
 
     textarea{
       height: 10em;
@@ -45,5 +49,16 @@
 
   .btn-dark{
     border-radius: 4px;
+    cursor: pointer;
+  }
+}
+h2{
+  a{
+    @include easeOut;
+    color: $secondary-color;
+
+      &:hover{
+        color: set-text-color($primary-color);
+      }
   }
 }

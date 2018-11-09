@@ -195,19 +195,25 @@ header {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 1rem; }
-  .boxes div {
+  margin-top: 1rem;
+  /*
+  div{
     font-size: 2rem;
     border: 3px solid #ecf4f3;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
-    .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #76dbd1;
-      color: #000; }
-      .boxes div:hover span {
-        color: #000; }
+    @include easeOut;
+
+      &:hover{
+        padding: 0.5rem 1.5rem;
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+        span{
+          color: set-text-color($secondary-color);
+        }
+      }
+  }
+*/ }
   .boxes input[type=text],
   .boxes select,
   .boxes textarea {
@@ -218,13 +224,22 @@ header {
     box-sizing: border-box;
     margin-top: .5em;
     margin-bottom: 1.2em; }
+  .boxes label {
+    font-size: 1.2em; }
   .boxes textarea {
     height: 10em; }
 
 .contact-form {
   text-align: left; }
   .contact-form .btn-dark {
-    border-radius: 4px; }
+    border-radius: 4px;
+    cursor: pointer; }
+
+h2 a {
+  transition: all 0.5s ease-out;
+  color: #76dbd1; }
+  h2 a:hover {
+    color: #fff; }
 
 .project-about {
   color: #fff;
