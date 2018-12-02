@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -6,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <title>Contact Me</title>
+    <title>About Me</title>
   </head>
   <body>
     <header>
@@ -24,48 +25,26 @@
           <li class="nav-item">
             <a href="index.html" class="nav-link" >Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item current">
             <a href="about.html" class="nav-link" >About Me</a>
           </li>
           <li class="nav-item">
             <a href="work.html" class="nav-link" >My Work</a>
           </li>
-          <li class="nav-item current">
+          <li class="nav-item">
             <a href="contact.html" class="nav-link" >Contact</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main id="contact">
-      <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
-      <h2 class="sm-heading">Drop me a line @ <a href="mailto:blackvq35@gmail.com">BlackVQ35@gmail.com</a> or fill out the form.</h2>
-<!--
-      <div class="boxes">
-        <div>
-          <span class="text-secondary">Email: </span> BlackVQ35@gmail.com
-        </div>
-        <div>
-          <span class="text-secondary">Location: </span> Elwood, IL
-        </div>
+    <main id="email-confirmation">
+      <div>
+        <p>
+          Thank you for you message, <?php echo "this is a test once the style is complete I am going to add this to my .gitignore before I write the php."; ?>
+        </p>
       </div>
--->
-      <div class="boxes contact-form">
-        <form method="POST" action="send.php">
-          <!-- add flash message to confirm send-->
-          <label for="fname">Name</label>
-          <input type="text" id="name" name="name">
 
-          <label for="lname">Email</label>
-          <input type="text" id="email" name="email">
-
-          <label for="subject">What can I do for you?</label>
-          <textarea id="subject" name="message"></textarea>
-
-          <!--<input type="submit" value="Send">-->
-          <button class="btn-dark" type="submit">Send</button>
-        </form>
-      </div>
     </main>
 
     <footer id="main-footer">
