@@ -41,7 +41,7 @@
     <main id="email-confirmation">
       <div>
         <p>
-          Thank you for you message, <?php echo "this is a test, adding this file to .gitignore"; ?>
+          Thank you for you message, <?php echo "another test. file is in .gitignore now."; ?>
         </p>
       </div>
 
