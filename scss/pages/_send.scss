@@ -1,0 +1,17 @@
+#email-confirmation{
+  a{
+    @include easeOut;
+    color: $secondary-color;
+
+      &:hover{
+        color: set-text-color($primary-color);
+      }
+  }
+}
+
+#email-confirmation{
+  .icons {
+    padding-top: 2em;
+  }
+
+}

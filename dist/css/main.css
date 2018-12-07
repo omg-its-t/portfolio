@@ -270,6 +270,15 @@ h2 a {
       border-color: #76dbd1;
       transition: all 0.5s ease-in-out; }
 
+#email-confirmation a {
+  transition: all 0.5s ease-in-out;
+  color: #76dbd1; }
+  #email-confirmation a:hover {
+    color: #fff; }
+
+#email-confirmation .icons {
+  padding-top: 2em; }
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
