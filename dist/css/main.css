@@ -265,7 +265,7 @@ h2 a {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.7rem; }
+  grid-gap: .8rem; }
   .projects img {
     width: 100%;
     border: 3px solid #fff; }
