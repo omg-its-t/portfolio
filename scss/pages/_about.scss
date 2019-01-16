@@ -3,6 +3,7 @@
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
+    "bioimage skills skills"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 }
@@ -20,11 +21,16 @@
   border-bottom: 5px solid $secondary-color;
 }
 
+.skills{
+  grid-area: skills;
+  font-size: 1.5rem;
+}
+
 .bio{
   grid-area: bio;
   font-size: 1.5rem;
 }
-  // need to fix, job 1 does not flex under picture
+
 .job-1{
   grid-area: job1;
 }

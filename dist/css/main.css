@@ -169,7 +169,7 @@ header {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "bioimage skills skills" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -182,6 +182,10 @@ header {
   background: #625d5d;
   padding: 0.5rem;
   border-bottom: 5px solid #76dbd1; }
+
+.skills {
+  grid-area: skills;
+  font-size: 1.5rem; }
 
 .bio {
   grid-area: bio;
@@ -331,7 +335,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "bioimg" "job3";
+    grid-template-areas: "bioimage" "bio" "skills" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
