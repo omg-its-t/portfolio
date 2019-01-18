@@ -166,6 +166,11 @@ header {
   text-align: center;
   display: inline-block; }
 
+.send {
+  font-size: 1.2em;
+  color: #76dbd1;
+  background: #555151; }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -335,7 +340,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "skills" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "skills"  "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }

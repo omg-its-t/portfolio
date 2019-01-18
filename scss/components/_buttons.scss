@@ -1,4 +1,4 @@
-//button styles
+//button$primary-color;styles
 .btn{
   display: block;
   padding: 0.5rem 1rem;
@@ -26,4 +26,10 @@
 .back{
   text-align: center;
   display: inline-block;
+}
+
+.send{
+  font-size: 1.2em;
+  color: $secondary-color;
+  background:$primary-color;
 }
