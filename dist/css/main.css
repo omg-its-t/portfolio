@@ -292,6 +292,11 @@ h2 a {
 #email-confirmation .icons {
   padding-top: 2em; }
 
+.mobile-portfolio-images {
+  text-align: center; }
+  .mobile-portfolio-images img {
+    margin: 1.5em; }
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
