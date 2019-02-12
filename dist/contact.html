@@ -54,13 +54,13 @@
         <form method="POST" action="send.php">
           <!-- add flash message to confirm send-->
           <label for="fname">Name</label>
-          <input type="text" id="name" name="name">
+          <input type="text" id="name" name="name" required>
 
           <label for="lname">Email</label>
-          <input type="text" id="email" name="email">
+          <input type="text" id="email" name="email" required>
 
           <label for="subject">What can I do for you?</label>
-          <textarea id="subject" name="message"></textarea>
+          <textarea id="subject" name="message" required></textarea>
 
           <!--<input type="submit" value="Send">-->
           <button class="btn send" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
