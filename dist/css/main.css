@@ -230,6 +230,7 @@ header {
   }
 */ }
   .boxes input[type=text],
+  .boxes input[type=email],
   .boxes select,
   .boxes textarea {
     width: 100%;
