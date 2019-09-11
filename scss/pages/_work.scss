@@ -15,4 +15,10 @@
       @include easeOut;
     }
   }
+
+  .item
+    h3{
+      color: $secondary-color;
+      text-align: center;
+  }
 }
