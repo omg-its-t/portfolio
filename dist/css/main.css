@@ -26,9 +26,9 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 5rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding: 0.2rem 1rem;
     background: rgba(90, 86, 86, 0.5); }
 
@@ -271,6 +271,10 @@ h2 a {
 
 .project-about a {
   color: #76dbd1; }
+
+#project div img {
+  display: inline-flex;
+  margin: 1em; }
 
 .projects {
   display: grid;
