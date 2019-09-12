@@ -51,12 +51,28 @@
         </div>
         <a href="work.html" class="btn back"><i class="fas fa-arrow-circle-left"></i> Back</a>
         <p>
-          Here is some about info on the MRP logins.
+          The purpose of this module is to track student attendance in the math labs. This is done by blocking the module routes using custom permissions in Drupal 8. Once the instructors login to the site with the room login, they are presented with a button to take them directly to the login/logout screen for students to use.
+        </p>
+        <h4>Student Login Form</h4>
+        <p>
+            Once the student clicks the green login button they are presented with the login form. This student login form is populated with a list of instructors and class numbers. Once submitted it records the user input of all fields, date and time. This is all fed to a custom view restricted by another set of permissions.
+        </p>
+        <h4>Student Logout Form</h4>
+        <p>
+            When a student clicks the red logout box they are presented with a list of all the users that are currently logged in. When they click their name they are brought to a confirmation screen displaying their name to confirm that they want to log out. Once they confirm, their entry is stamped with a logout time and no longer will be populated in the logout list.
+        </p>
+        <h4>Admin Options Screen</h4>
+        <p>
+            The admin screen is a control panel for all actions the admin of the module can do. These are all contextual links. If the admin permission is attached to the user that is logged in, these buttons will pop up, eliminating the need to memorize or bookmark links. The admin has the ability to create/read/update/delete the instructors and course numbers that populate the student login form.
+        </p>
+        <h4>All Log View</h4>
+        <p>
+            The All Logins screen is regulated by custom Drupal 8 permissions as well. This is a custom view that is set to display the information of all login/logout records in the past 24 hours. This view has exposed filters to allow math instructors to filter by instructor name or date of login. They are also able to export the data to Excel for archival and sorting later if needed.
         </p>
         <h2 class="sm-heading">Future Plans</h2>
         <div class="project-about">
           <p>
-            any furure plans for mrp/problems with database design/limits with current setup and instructor use?
+              I would like to add more sorting options to the All Logins view. Another thing I would like to revisit is the database design. I believe I can come up with a more efficient way of logging users without the need to create a new record each time the same user logs in. This would make for a lighter load when querying the data.
           </p>
     </main>
 
