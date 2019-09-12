@@ -15,11 +15,11 @@
   }
 }
 
-#project{
-  div{
-    img{
-      display: inline-flex;
-      margin: 1em;
-    }
+.multi-image{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  img{
+    margin: .5em;
   }
 }

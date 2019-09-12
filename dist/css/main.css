@@ -272,9 +272,12 @@ h2 a {
 .project-about a {
   color: #76dbd1; }
 
-#project div img {
-  display: inline-flex;
-  margin: 1em; }
+.multi-image {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .multi-image img {
+    margin: .5em; }
 
 .projects {
   display: grid;

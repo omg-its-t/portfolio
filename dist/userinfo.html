@@ -39,18 +39,20 @@
 
     <main id="project">
       <h1 class="lg-heading">Information <span class="text-secondary">Display Screen</span></h1>
-      <h2 class="sm-heading">2018/2019</h2>
       <div class="project-about">
-        <img src="" class="center" alt="" />
+        <h2 class="sm-heading">2018/2019</h2>
+        <img src="img/userinfo-large.gif" class="center" alt="user information screen" />
         <a href="work.html" class="btn back"><i class="fas fa-arrow-circle-left"></i> Back</a>
         <p>
           This is my latest project that is still a work in progress. This is a form that a new student, or anyone that forgot their username or password, can fill out to retrieve their account information. What the form is actually doing is collecting the user input and sending it to an API that queries the SIS (Student Information System) for their account detials. It then returns a string with all the users information, on the backend I am saving that data to session variables and redirecting the user to a new page. This is done to mask the information in the returned query string in the address bar to prevent the back and refresh buttons from being used. There is also a flag that is sent back with the query string indicating what action the user took (looking up ID, resetting passwrod, ect.). I take that flag and send a custom email to the emaail address that was just queried as a security measure to let that user know their information was just looked up.
         </p>
+        </div>
         <h2 class="sm-heading">Future Plans</h2>
         <div class="project-about">
           <p>
             This is still in the development stages. I have had trouble with different browsers treating the session variables differently. I am currently brainstorming a test plan to rollout to a select group to gather more feedback about different browser success rates. Once testing is over and it is ready for production, I would like to implement a soft rollout since this form is a highly used form.
           </p>
+        </div>
     </main>
 
     <footer id="main-footer">
