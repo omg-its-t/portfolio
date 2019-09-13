@@ -49,17 +49,17 @@
           <img src="img/mrp-courses.jpg" class="multi" alt="math redesign courses list" />
           <img src="img/mrp-login-view.jpg" class="multi" alt="math redesign student log view" />
         </div>
-        <a href="work.html" class="btn back"><i class="fas fa-arrow-circle-left"></i> Back</a>
+
         <p>
-          The purpose of this module is to track student attendance in the math labs. This is done by blocking the module routes using custom permissions in Drupal 8. Once the instructors login to the site with the room login, they are presented with a button to take them directly to the login/logout screen for students to use.
+          The purpose of this module is to track student attendance in the math labs. This is done by blocking the module routes using custom permissions in Drupal 8. Once the instructor's login to the site with the room login, they are presented with a button to take them directly to the login/logout screen for students to use.
         </p>
         <h4>Student Login Form</h4>
         <p>
-            Once the student clicks the green login button they are presented with the login form. This student login form is populated with a list of instructors and class numbers. Once submitted it records the user input of all fields, date and time. This is all fed to a custom view restricted by another set of permissions.
+            Once the student clicks the green login button, they are presented with the login form. This student login form is populated with a list of instructors and class numbers. Once submitted it records the user input of all fields, date and time. This is all fed to a custom view restricted by another set of permissions.
         </p>
         <h4>Student Logout Form</h4>
         <p>
-            When a student clicks the red logout box they are presented with a list of all the users that are currently logged in. When they click their name they are brought to a confirmation screen displaying their name to confirm that they want to log out. Once they confirm, their entry is stamped with a logout time and no longer will be populated in the logout list.
+            When a student clicks the red logout box, they are presented with a list of all the users that are currently logged in. When they click their name, they are brought to a confirmation screen displaying their name to confirm that they want to log out. Once they confirm, their entry is stamped with a logout time and no longer will be populated in the logout list.
         </p>
         <h4>Admin Options Screen</h4>
         <p>
@@ -69,11 +69,14 @@
         <p>
             The All Logins screen is regulated by custom Drupal 8 permissions as well. This is a custom view that is set to display the information of all login/logout records in the past 24 hours. This view has exposed filters to allow math instructors to filter by instructor name or date of login. They are also able to export the data to Excel for archival and sorting later if needed.
         </p>
-        <h2 class="sm-heading">Future Plans</h2>
+      </div>
         <div class="project-about">
+          <h2 class="sm-heading">Future Plans</h2>
           <p>
               I would like to add more sorting options to the All Logins view. Another thing I would like to revisit is the database design. I believe I can come up with a more efficient way of logging users without the need to create a new record each time the same user logs in. This would make for a lighter load when querying the data.
           </p>
+        </div>
+        <a href="work.html" class="btn back"><i class="fas fa-arrow-circle-left"></i> Back</a>
     </main>
 
     <footer id="main-footer">

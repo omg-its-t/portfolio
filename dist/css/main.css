@@ -164,7 +164,8 @@ header {
 
 .back {
   text-align: center;
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 1em; }
 
 .send {
   font-size: 1.2em;
@@ -274,7 +275,7 @@ h2 a {
 
 .multi-image {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap; }
   .multi-image img {
     margin: .5em; }
@@ -293,6 +294,12 @@ h2 a {
   .projects .item h3 {
     color: #76dbd1;
     text-align: center; }
+
+.project-about h4, .project-about .sm-heading {
+  color: #76dbd1; }
+
+#work .lg-heading {
+  margin-bottom: .5em; }
 
 #email-confirmation a {
   transition: all 0.5s ease-in-out;
