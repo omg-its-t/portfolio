@@ -278,7 +278,8 @@ h2 a {
   justify-content: space-evenly;
   flex-wrap: wrap; }
   .multi-image img {
-    margin: .5em; }
+    margin: .5em;
+    align-self: center; }
 
 .projects {
   display: grid;
